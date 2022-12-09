@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\SENAI+\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj": {}
+    "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\SENAI+\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj": {
+    "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\SENAI+\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj",
         "projectName": "ChapterBE10.WebApi",
-        "projectPath": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\SENAI+\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj",
+        "projectPath": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\ChapterBE10.WebApi.csproj",
         "packagesPath": "C:\\Users\\gucke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\SENAI+\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\gucke\\OneDrive\\Área de Trabalho\\UC11\\ChapterBE10.WebApi\\ChapterBE10.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gucke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.10, )"
             },
