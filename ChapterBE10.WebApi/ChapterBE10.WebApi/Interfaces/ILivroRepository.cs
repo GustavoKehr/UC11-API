@@ -9,6 +9,7 @@ namespace ChapterBE10.WebApi.Interfaces
         void Atualizar(int id, Livro livro);
         void Deletar(int id);
         Livro BuscarPorId(int id);
-        Livro BuscaPorNome(string titulo);
+        Livro BuscarPorTitulo(string titulo);
+       
     }
 }

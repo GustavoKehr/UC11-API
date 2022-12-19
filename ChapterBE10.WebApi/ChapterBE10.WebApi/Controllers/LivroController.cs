@@ -1,4 +1,5 @@
-﻿using ChapterBE10.WebApi.Models;
+﻿using ChapterBE10.WebApi.Interfaces;
+using ChapterBE10.WebApi.Models;
 using ChapterBE10.WebApi.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -91,12 +92,12 @@ namespace ChapterBE10.WebApi.Controllers
             }
         }
 
-        [HttpGet("{titulo}")]
+        [HttpGet("titulo/{titulo}")]
         public IActionResult GetByTitle(string titulo)
         {
             try
             {
-                Livro livro = _livroRepository.BuscaPorNome(titulo);
+                Livro livro = _livroRepository.BuscarPorTitulo(titulo);
 
                 if (livro == null)
                 {

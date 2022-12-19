@@ -9,9 +9,7 @@ namespace Chapter.WebApi.Contexts
         public ChapterContext()
         {
         }
-        public ChapterContext(DbContextOptions<ChapterContext>
-        options)
-        : base(options)
+        public ChapterContext(DbContextOptions<ChapterContext>options) : base (options)
         {
         }
         // vamos utilizar esse método para configurar o banco de dados

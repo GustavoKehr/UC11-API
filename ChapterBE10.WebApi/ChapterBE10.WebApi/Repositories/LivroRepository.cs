@@ -28,14 +28,14 @@ namespace ChapterBE10.WebApi.Repositories
             _chapterContext.SaveChanges();
         }
 
-        public Livro BuscaPorNome(string titulo)
-        {
-            return _chapterContext.Livros.Find(titulo);
-        }
-
         public Livro BuscarPorId(int id)
         {
-            return  _chapterContext.Livros.Find(id);
+            return _chapterContext.Livros.Find(id);        
+        }
+
+        public Livro BuscarPorTitulo(string titulo)
+        {
+            return _chapterContext.Livros.FirstOrDefault(t => t.Titulo == titulo.Trim());
         }
 
         public void Cadstrar(Livro livro)
@@ -55,5 +55,6 @@ namespace ChapterBE10.WebApi.Repositories
         {
             return _chapterContext.Livros.ToList();
         }
+        
     }
 }
