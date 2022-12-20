@@ -1,11 +1,13 @@
 using Chapter.WebApi.Contexts;
+using ChapterBE10.WebApi.Interfaces;
 using ChapterBE10.WebApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ChapterContext, ChapterContext>();
-builder.Services.AddTransient<LivroRepository, LivroRepository>();  
+builder.Services.AddTransient<ILivroRepository, LivroRepository>();  
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

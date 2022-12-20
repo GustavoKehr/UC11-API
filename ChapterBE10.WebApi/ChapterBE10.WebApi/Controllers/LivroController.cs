@@ -6,16 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChapterBE10.WebApi.Controllers
 {
-    [Produces("application/json")]//formato de resposta
+    
+    //formato de resposta
     [Route("api/[controller]")]//api/Livro : rota para acesso da api
     [ApiController]//id que é um controller
     public class LivroController : ControllerBase
     {
-        private readonly LivroRepository _livroRepository;
+        private readonly ILivroRepository _ILivroRepository;
 
-        public LivroController(LivroRepository livroRepository)
+        public LivroController(ILivroRepository iLivroRepository)
         {
-            _livroRepository = livroRepository;
+            _ILivroRepository = iLivroRepository;
         }
 
         [HttpGet]
@@ -23,7 +24,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                return Ok(_livroRepository.Ler());
+                return Ok(_ILivroRepository.Ler());
             }
             catch (Exception e)
             {
@@ -36,7 +37,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                _livroRepository.Cadstrar(livro);
+                _ILivroRepository.Cadstrar(livro);
                 return Ok(livro);
             }
             catch (Exception e)
@@ -50,7 +51,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                _livroRepository.Atualizar(id, livro);
+                _ILivroRepository.Atualizar(id, livro);
                 return StatusCode(204);
             }
             catch (Exception e)
@@ -64,7 +65,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                _livroRepository.Deletar(id);
+                _ILivroRepository.Deletar(id);
                 return StatusCode(204);
             }
             catch (Exception e)
@@ -78,7 +79,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                Livro livro = _livroRepository.BuscarPorId(id);
+                Livro livro = _ILivroRepository.BuscarPorId(id);
 
                 if (livro == null)
                 {
@@ -97,7 +98,7 @@ namespace ChapterBE10.WebApi.Controllers
         {
             try
             {
-                Livro livro = _livroRepository.BuscarPorTitulo(titulo);
+                Livro livro = _ILivroRepository.BuscarPorTitulo(titulo);
 
                 if (livro == null)
                 {
