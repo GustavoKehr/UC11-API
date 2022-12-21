@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChapterBE10.WebApi.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsuarioController : ControllerBase
