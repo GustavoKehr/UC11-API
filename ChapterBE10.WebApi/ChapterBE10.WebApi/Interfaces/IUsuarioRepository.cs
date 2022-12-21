@@ -7,7 +7,7 @@ namespace ChapterBE10.WebApi.Interfaces
         List<Usuario> Listar();
         void Cadastrar(Usuario usuario);
         void Atualizar(int Id, Usuario usuario);
-        void Deleter(int Id);
+        void Deletar(int Id);
         Usuario BuscarPorId(int Id);
         //Usuario Login(string email, string senha);
     }

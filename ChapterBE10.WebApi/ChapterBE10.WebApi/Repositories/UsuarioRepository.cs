@@ -36,14 +36,12 @@ namespace ChapterBE10.WebApi.Repositories
             _chapterContext.Usuarios.Add(usuario);
             _chapterContext.SaveChanges();
         }
-
-        public void Deleter(int Id)
+        public void Deletar(int Id)
         {
             Usuario usuarioBuscado = _chapterContext.Usuarios.Find(Id);
             _chapterContext.Usuarios.Remove(usuarioBuscado);
             _chapterContext.SaveChanges();
         }
-
         public List<Usuario> Listar()
         {
             return _chapterContext.Usuarios.ToList();
