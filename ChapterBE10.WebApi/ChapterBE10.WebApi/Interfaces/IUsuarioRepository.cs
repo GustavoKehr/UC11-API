@@ -9,7 +9,7 @@ namespace ChapterBE10.WebApi.Interfaces
         void Atualizar(int Id, Usuario usuario);
         void Deletar(int Id);
         Usuario BuscarPorId(int Id);
-        //Usuario Login(string email, string senha);
+        Usuario Login(string email, string senha);
     }
 
 

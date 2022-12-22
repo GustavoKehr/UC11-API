@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChapterBE10.WebApi.Controllers
 {
-    
-     //formato de resposta
+
+    [Produces("application/json")] //formato de resposta
     [Route("api/[controller]")]//api/Livro : rota para acesso da api
     [ApiController]//id que é um controller
     public class LivroController : ControllerBase

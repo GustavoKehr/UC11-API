@@ -142,3 +142,4 @@ C:\Users\gucke\OneDrive\Área de Trabalho\UC11\ChapterBE10.WebApi\ChapterBE10.We
 C:\Users\gucke\OneDrive\Área de Trabalho\UC11\ChapterBE10.WebApi\ChapterBE10.WebApi\obj\Debug\net6.0\ChapterBE10.WebApi.pdb
 C:\Users\gucke\OneDrive\Área de Trabalho\UC11\ChapterBE10.WebApi\ChapterBE10.WebApi\obj\Debug\net6.0\ChapterBE10.WebApi.genruntimeconfig.cache
 C:\Users\gucke\OneDrive\Área de Trabalho\UC11\ChapterBE10.WebApi\ChapterBE10.WebApi\obj\Debug\net6.0\ref\ChapterBE10.WebApi.dll
+C:\Users\gucke\OneDrive\Área de Trabalho\UC11\ChapterBE10.WebApi\ChapterBE10.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
