@@ -1,6 +1,7 @@
 ﻿using ChapterBE10.WebApi.Interfaces;
 using ChapterBE10.WebApi.Models;
 using ChapterBE10.WebApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,6 +34,7 @@ namespace ChapterBE10.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "1")]
         public IActionResult Cadastrar(Livro livro)
         {
             try
